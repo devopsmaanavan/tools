@@ -1,5 +1,5 @@
 # Tomcat installation on EC2 instance 
-- Complete DevOps Project course on [MaanavaN Learn Code](#)  
+- Complete DevOps course on [MaanavaN Learn Code](#)  
 ### Pre-requisites
 1. EC2 instance with Java 11
 ### Install Apache Tomcat
