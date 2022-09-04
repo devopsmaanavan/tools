@@ -18,8 +18,8 @@ Note: you may get below error while starting tomcat incase if you dont install J
 Neither the JAVA_HOME nor the JRE_HOME environment variable is defined At least one of these environment variable is needed to run this program
  
 cd /opt/apache-tomcat-8.5.82/bin  
-   ./shutdown.sh
-   ./startup.sh
+ ./shutdown.sh
+ ./startup.sh
   
 Check point :
 access tomcat application from browser on port 8080
@@ -30,8 +30,10 @@ Using unique ports for each application is a best practice in an environment. Bu
 cd /opt/apache-tomcat-<version>/conf
 # update port number in the "connecter port" field in server.xml
 # restart tomcat after configuration update
-tomcatdown
-tomcatup
+cd /opt/apache-tomcat-8.5.82/bin  
+ ./shutdown.sh
+ ./startup.sh
+ 
 Check point :
 Access tomcat application from browser on port 8090
 
@@ -56,7 +58,9 @@ Update users information in the tomcat-users.xml file goto tomcat home directory
  <user username="admin" password="admin" roles="manager-gui, manager-script, manager-jmx, manager-status"/>
  <user username="deployer" password="deployer" roles="manager-script"/>
  <user username="tomcat" password="s3cret" roles="manager-gui"/>
-Restart serivce and try to login to tomcat application from the browser. This time it should be Successful
-  cd /opt/apache-tomcat-8.5.82/bin  
+
+ Restart serivce and try to login to tomcat application from the browser. This time it should be Successful
+
+cd /opt/apache-tomcat-8.5.82/bin  
    ./shutdown.sh
    ./startup.sh
