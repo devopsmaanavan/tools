@@ -19,7 +19,6 @@
    > Note: you may get below error while starting tomcat incase if you dont install Java   
    `Neither the JAVA_HOME nor the JRE_HOME environment variable is defined At least one of these environment variable is needed to run this program`
 
-   ```
   #### Check point :
 access tomcat application from browser on port 8080  
  - http://<Public_IP>:8080
